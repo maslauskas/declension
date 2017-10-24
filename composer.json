@@ -1,0 +1,34 @@
+{
+  "name": "maslauskas/declension",
+  "description": "Package that transforms the grammatical case of strings.",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "declension",
+    "lithuanian",
+    "grammatical"
+  ],
+  "authors": [
+    {
+      "name": "Tadas Maslauskas",
+      "email": "maslauskas.t@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Maslauskas\\Declension\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Maslauskas\\Declension\\DeclensionServiceProvider"
+      ],
+      "aliases": {
+        "Declension": "Maslauskas\\Declension\\DeclensionFacade"
+      }
+    }
+  }
+}
